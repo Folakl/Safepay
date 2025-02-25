@@ -27,11 +27,11 @@ const Withdrawmoney = () => {
   };
 
   return (
-    <div className="lg:p-5 h-full w-full bg-[blue]">
+    <div className="lg:p-5 h-[800px] w-full bg-[blue]">
       <h1 className="text-2xl font-bold text-center text-white">Withdraw Money</h1>
       <p className="text-lg text-center text-white">Current Balance: ${balance}</p>
 
-      <div className="mt-5 lg:mx-[300px] md:mx-[200px] mx-5">
+      <div className="mt-5 justify-self-center">
         <h2 className="block text-lg font-medium text-white">Enter Withdrawal Amount</h2>
         <div
           id="amount-display"
