@@ -31,7 +31,7 @@ const Addmoney = () => {
     <div className="space-y-4 bg-[blue]">
       <h3 className='text-center text-[25px] pt-2 text-white'>Let's help you save</h3>
       <h3 className='lg:mx-[340px] md:mx-[200px] mx-5 px-5 text-white'>Enter the amount you want to save</h3>
-      <div id="amount-display" className="text-2xl font-semibold text-gray-700 lg:mx-[350px] md:mx-[200px] h-[50px] mx-5 bg-gray-200 p-2 lg:w-[500px] md:w-[400px] w-[350px] rounded-lg">
+      <div id="amount-display" className="text-2xl font-semibold text-gray-700 justify-self-center h-[50px] mx-5 bg-gray-200 p-2 lg:w-[500px] md:w-[400px] w-[350px] rounded-lg">
         {amount || 'Enter amount'}
       </div>
       <div className="grid grid-cols-3 gap-6 lg:w-[500px] md:w-[500px] w-[350px] lg:mx-[350px] md:mx-[200px] mx-5">
