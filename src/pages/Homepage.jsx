@@ -30,8 +30,8 @@ const HomePage = () => {
 
         {/* Action links for transactions */}
         <div className='flex justify-center my-5 text-center gap-5'>
-          <Link ><button className='lg:w-[300px] lg:h-[50px] md:w-[300px]  font-bold md:h-[50px] w-[150px] h-[50px] bg-[green] rounded-md pt-3 text-white' to='/addmoney'> Add money</button></Link>
-          <Link ><button className='lg:w-[300px] lg:h-[50px] md:w-[300px]  font-bold md:h-[50px] w-[150px] h-[50px] bg-[blue] rounded-md pt-3 text-white' to='/withdrawmoney'> withdraw money</button></Link>
+          <Link to ='addmoney'><button className='lg:w-[300px] lg:h-[50px] md:w-[300px]  font-bold md:h-[50px] w-[150px] h-[50px] bg-[green] rounded-md pt-3 text-white' > Add money</button></Link>
+          <Link to='/withdrawmoney'><button className='lg:w-[300px] lg:h-[50px] md:w-[300px]  font-bold md:h-[50px] w-[150px] h-[50px] bg-[blue] rounded-md pt-3 text-white' > withdraw money</button></Link>
 
         </div>
 
