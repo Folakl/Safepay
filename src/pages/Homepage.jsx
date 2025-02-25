@@ -29,9 +29,10 @@ const HomePage = () => {
         </div>
 
         {/* Action links for transactions */}
-        <div className='md:flex mx-20 mt-5 text-center'>
-          <Link className='w-[250px] h-[50px] bg-[green] rounded-md pt-3 text-white' to='/addmoney'>Add money</Link>
-          <Link className='w-[250px] h-[50px] bg-[#81812f] rounded-md mx-[10px] pt-3 text-white' to='/withdrawmoney'>Withdraw</Link>
+        <div className='flex justify-center py-5 text-center gap-5'>
+          <Link ><button className='lg:w-[300px] lg:h-[50px] md:w-[300px] md:h-[50px] w-[150px] h-[50px] bg-[green] rounded-md pt-3 text-white' to='/addmoney'> Add money</button></Link>
+          <Link ><button className='lg:w-[300px] lg:h-[50px] md:w-[300px] md:h-[50px] w-[150px] h-[50px] bg-[blue] rounded-md pt-3 text-white' to='/withdrawmoney'> withdraw money</button></Link>
+
         </div>
 
         {/* Additional features */}

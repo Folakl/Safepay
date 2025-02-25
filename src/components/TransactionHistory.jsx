@@ -1,3 +1,4 @@
+import { div } from 'framer-motion/client';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
@@ -13,7 +14,8 @@ const TransactionHistory = () => {
     };
 
     return (
-        <div className='bg-white'>
+        <div className='flex justify-center'>
+            <div className='bg-white'>
             <div className=''>
             <h2 className='font-bold mx-[400px] text-[30px] py-10'>Transaction History</h2>
                 {transactions.length === 0 ? (
@@ -33,6 +35,7 @@ const TransactionHistory = () => {
            onClick={handleGoback}
              >Return back to home</button>
             </div>
+        </div>
         </div>
     );
 };
