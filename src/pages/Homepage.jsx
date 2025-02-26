@@ -14,7 +14,7 @@ const HomePage = () => {
 
   return (
     <div className='bg-[blue] md:h-[1000px] w-full  h-full flex justify-center items-center'>
-      <div className='mx-5 pt-5 md:mx-[250px] lg:mx-[300px] mb-[300px]  bg-[white] h-[600px] w-[500px] text-center'>
+      <div className='mx-5 pt-5 md:mx-[250px] lg:mx-[300px] mt-10  mb-[300px]  bg-[white] h-[600px] w-[500px] text-center'>
         {/* User greeting and account details */}
         <div>
           <h3 className='text-[20px]'>Hello<b></b></h3>

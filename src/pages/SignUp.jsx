@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { signUpUser } from '../auth/bankSlice';
 import clipart from '../assetsone/carte.jpeg';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { div } from 'framer-motion/client';
+
 
 const SignUp = () => {
   // Initialize navigation hook
@@ -45,10 +47,12 @@ const SignUp = () => {
       });
   };
   return (
-    <div className='grid grid-cols-2 bg-[blue] w-100% h-full'>
+    <div className='bg-[blue] w-100% h-screen '>
+
+<div className='grid grid-cols-2  justify-self-center'>
       {/* Left section with promotional content */}
-      <div className='w-50%'>
-        <div className='h-[580px] w-[320px] py-10 rounded-[42px] mx-[200px] my-5 bg-[#53534b]'>
+      <div className='w-50% lg:block md:block hidden '>
+        <div className='h-[580px] w-[320px] py-10 rounded-[42px]  my-5 bg-[#53534b] '>
           <img src={clipart} alt="okay" className='w-[250px] h-[300px] rounded-e-lg mx-10' />
           <h3 className='font-bold text-[white] text-[30px] mt-[20px] text-center'>Save money</h3>
           <h3 className='mt-5 text-white text-center font-sans'>
@@ -102,6 +106,9 @@ const SignUp = () => {
           </button>
         </div>
       </div>
+     
+    </div>
+    <h3 className='justify-self-center font-bold text-[20px] mt-10'>Already have an account  <Link to="/login"><span className='text-[white]'>Sign in here</span></Link></h3>
     </div>
   );
 };

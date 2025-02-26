@@ -49,8 +49,8 @@ function App() {
         <Router>
           <div>
             <Routes>
-              <Route path='/signup' element={<SignUp />} />
-              <Route path='/' element={<Login />} />
+              <Route path='/' element={<SignUp />} />
+              <Route path='/login' element={<Login />} />
               <Route path='/homepage' element={<HomePage />} />
               <Route path='/addmoney' element={<Addmoney />} />
          
