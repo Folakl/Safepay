@@ -47,7 +47,7 @@ const SignUp = () => {
       });
   };
   return (
-    <div className='bg-[blue] w-100% h-screen '>
+    <div className='bg-[blue] w-100% lg:h-[770px] md:h-[1100px] h-[720px] md:pt-10 lg:pt-10 pt-0'>
 
 <div className='grid grid-cols-2  justify-self-center'>
       {/* Left section with promotional content */}
@@ -108,7 +108,7 @@ const SignUp = () => {
       </div>
      
     </div>
-    <h3 className='justify-self-center font-bold text-[20px] mt-10'>Already have an account  <Link to="/login"><span className='text-[white]'>Sign in here</span></Link></h3>
+    <h3 className='justify-self-center font-bold  mt-5'>Already have an account  <Link to="/login"><span className=' text-[20px] text-[white]'>Sign in here</span></Link></h3>
     </div>
   );
 };
