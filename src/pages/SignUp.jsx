@@ -65,7 +65,7 @@ const SignUp = () => {
 
       {/* Right section with sign-up form */}
       <div className='w-50%'>
-        <div className='h-[580px] w-[320px] py-10 mx-10 rounded-[40px] my-5 bg-[white] border-2 border-[#220f0f] text-[#220f0f]'>
+        <div className='h-[580px] w-[320px] py-10 mx-2 rounded-[40px] my-5 bg-[white] border-2 border-[#220f0f] text-[#220f0f]'>
           <h3 className='font-bold pt-[20px] text-center'>Create Account</h3>
 
           {/* Input fields for user details */}

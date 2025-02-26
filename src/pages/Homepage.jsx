@@ -13,8 +13,8 @@ const HomePage = () => {
  
 
   return (
-    <div className='bg-[blue] md:h-[1000px] w-full  h-full flex justify-center items-center'>
-      <div className='mx-5 pt-5 md:mx-[250px] lg:mx-[300px] mt-10  mb-[300px]  bg-[white] h-[600px] w-[500px] text-center'>
+    <div className='bg-[blue]  w-full lg:h-[770px] md:h-[1100px] h-[720px] flex justify-center items-center'>
+      <div className='mx-5 pt-5 justify-self-center  bg-[white] h-[620px] w-[500px] text-center'>
         {/* User greeting and account details */}
         <div>
           <h3 className='text-[20px]'>Hello<b></b></h3>
@@ -30,8 +30,8 @@ const HomePage = () => {
 
         {/* Action links for transactions */}
         <div className='flex justify-center my-5 text-center gap-5'>
-          <Link to ='/addmoney'><button className='lg:w-[300px] lg:h-[50px] md:w-[300px]  font-bold md:h-[50px] w-[150px] h-[50px] bg-[green] rounded-md pt-3 text-white' > Add money</button></Link>
-          <Link to='/withdrawmoney'><button className='lg:w-[300px] lg:h-[50px] md:w-[300px]  font-bold md:h-[50px] w-[150px] h-[50px] bg-[blue] rounded-md pt-3 text-white' > withdraw money</button></Link>
+          <Link to ='/addmoney'><button className='lg:w-[150px] lg:h-[50px] md:w-[150px]  font-bold md:h-[50px] w-[150px] h-[50px] bg-[green] rounded-md pt-3 text-white' > Add money</button></Link>
+          <Link to='/withdrawmoney'><button className='lg:w-[150px] lg:h-[50px] md:w-[150px]  font-bold md:h-[50px] w-[150px] h-[50px] bg-[blue] rounded-md pt-3 text-white' > withdraw money</button></Link>
 
         </div>
 
