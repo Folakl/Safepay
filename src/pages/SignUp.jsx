@@ -1,10 +1,9 @@
 // Import necessary libraries and components
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { signUpUser } from '../auth/bankSlice';
 import clipart from '../assetsone/carte.jpeg';
 import { Link, useNavigate } from 'react-router-dom';
-import { div } from 'framer-motion/client';
 
 
 const SignUp = () => {

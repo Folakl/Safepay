@@ -1,32 +1,18 @@
 // Import necessary libraries and components
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { verifyOtp } from '../auth/bankSlice';
 import { useDispatch } from 'react-redux';
 import carte from '../assetsone/carte.jpeg';
 import { useNavigate } from 'react-router-dom';
 
 const Verify = () => {
-  // Initialize navigation hook
   const navigate = useNavigate();
-
-  // Initialize dispatch function for Redux actions
   const dispatch = useDispatch();
+  const [formData, setFormData] = useState({email: '', otp: '',});
 
-  // State to store form input values
-  const [formData, setFormData] = useState({
-    email: '',
-    otp: '',
-  });
+  const handleChange = (e) => {setFormData({ ...formData, [e.target.name]: e.target.value });  };
 
-  // Handle input field changes and update form data state
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
-
+  const handleSubmit = (e) => {e.preventDefault(); 
     // Dispatch the OTP verification action
     dispatch(verifyOtp(formData))
       .unwrap() // Wait for the action to complete

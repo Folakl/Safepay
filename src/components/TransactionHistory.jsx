@@ -1,5 +1,3 @@
-import { div } from 'framer-motion/client';
-import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
@@ -22,13 +20,13 @@ const TransactionHistory = () => {
              {transactions.length === 0 ? (
                     <p>No transactions yet.</p>
                 ) : (
-                    <ul className='w-screen h-full justify-self-center  bg-[blue]  text-white py-10 px-10 rounded-md'>
+                    <div className='w-contain h-full justify-self-center  py-5 px-10 rounded-md'>
                         {transactions.map((transaction, index) => (
-                            <li key={index}>
-                                <strong>{transaction.type}</strong> : ${transaction.amount} {transaction.description} @ {new Date(transaction.date).toLocaleString()}
-                            </li>
+                            <div key={index} className='bg-[blue]  text-white py-5 h-[50px] px-5 rounded-xl border-2'>
+                                <h3>{index}:   {transaction.type} : ${transaction.amount} {transaction.description} @ {new Date(transaction.date).toLocaleString()}</h3>
+                            </div>
                         ))}
-                    </ul>
+                    </div>
                 )} 
              </div>
 
