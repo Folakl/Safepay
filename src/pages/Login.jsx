@@ -1,5 +1,5 @@
 // Import necessary libraries and components
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { signInUser } from '../auth/bankSlice';
 import { useNavigate } from 'react-router-dom';
@@ -34,7 +34,7 @@ const Login = () => {
                 navigate("/homepage"); // Navigate to the homepage on success
             })
             .catch((error) => {
-                console.error('Login failed'); // Log error for debugging
+                console.error('Login failed :', error); // Log error for debugging
                 alert("Invalid email or password"); // Display error message to the user
             });
     };
@@ -51,7 +51,7 @@ const Login = () => {
                         <h3 className='pt-3'>Email</h3>
                         <input
                             type="email"
-                            className='mt-3 lg:w-[350px] md:w-[350px] w-350px h-[40px] border-2 border-[blue] px-5 rounded-2xl'
+                            className='mt-3 lg:w-[350px] md:w-[350px] w-350px h-[40px] border-2 outline-none border-[blue] px-5 rounded-2xl'
                             value={formData.email}
                             name="email"
                             placeholder='Enter your email'
@@ -62,7 +62,7 @@ const Login = () => {
                         <h3 className='pt-3 text-center'>Password</h3>
                         <input
                             type="password"
-                            className='mt-3 lg:w-[350px] md:w-[350px] w-350px h-[40px] border-2 border-[blue] px-5 rounded-2xl'
+                            className='mt-3 lg:w-[350px] md:w-[350px] w-350px h-[40px] border-2 outline-none border-[blue] px-5 rounded-2xl'
                             value={formData.password}
                             name="password"
                             placeholder='Enter your password'
