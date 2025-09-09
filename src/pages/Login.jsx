@@ -24,27 +24,26 @@ const Login = () => {
 
     // Handle form submission
     const handleLogin = (e) => {
-        e.preventDefault(); // Prevent default form submission behavior
+        e.preventDefault();
 
-        // Dispatch the login action
         dispatch(signInUser(formData))
             .unwrap() // Wait for the action to complete
             .then((response) => {
                 console.log("Logged in successfully");              
-                navigate("/homepage"); // Navigate to the homepage on success
+                navigate("/homepage"); // Navigate to the homepage 
             })
             .catch((error) => {
-                console.error('Login failed :', error); // Log error for debugging
-                alert("Invalid email or password"); // Display error message to the user
+                console.error('Login failed :', error); 
+                alert("Invalid email or password"); 
             });
     };
 
     return (
-        <div className='bg-[blue] h-[1000px] w-100% flex justify-center items-center'>
-            <div className='h-[450px] lg:w-[500px] md:w-[500px] w-[350px] mb-[450px] bg-[white] font-bold text-center lg:mx-[270px] md:mx-[270px] mx-5 rounded-2xl'>
+        <div className='bg-[blue] h-screen  w-100% flex justify-center  pt-10'>
+            <div className=' h-fit   my-5 lg:w-[400px] md:w-[400px] w-[300px] mb-[450px] bg-[white] font-bold text-center lg:mx-[270px] md:mx-[270px] mx-5 py-10 rounded-2xl'>
                 <div className='mx-2'>
                     <div className='px-5'>
-                        <h3 className='font-bold pt-[120px] px-[50px]'>Welcome Back</h3>
+                        <h3 className='font-bold px-[50px]'>Welcome Back</h3>
                         <h3 className='font-semibold px-[40px]'>Log in to your Account</h3>
                         
                         {/* Input field for email */}
@@ -72,7 +71,7 @@ const Login = () => {
                         {/* Submit button */}
                         <button
                             onClick={handleLogin}
-                            className='lg:w-[350px] md:w-[350px] w-[250px] text-white mt-5 lg:mx-10 md:mx-10 mx-5 h-[40px] rounded-2xl bg-[blue]'
+                            className='lg:w-[300px] md:w-[300px] w-[250px] text-white mt-5 justify-self-center h-[40px] rounded-2xl bg-[blue]'
                         >
                             Sign in
                         </button>
