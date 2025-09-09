@@ -46,13 +46,13 @@ const SignUp = () => {
       });
   };
   return (
-    <div className='bg-[blue] w-100% lg:h-[770px] md:h-[1100px] h-[720px] md:pt-10 lg:pt-10 pt-0'>
+    <div className='bg-[blue] w-100% lg:h-fit md:h-fit h-contain  overflow-y-auto'>
 
 <div className='grid grid-cols-2  justify-self-center'>
       {/* Left section with promotional content */}
       <div className='w-50% lg:block md:block hidden '>
-        <div className='h-[580px] w-[320px] py-10 rounded-[42px]  my-5 bg-[#53534b] '>
-          <img src={clipart} alt="okay" className='w-[250px] h-[300px] rounded-e-lg mx-10' />
+        <div className='lg:h-fit md:h-fit h-contain px-5 w-[320px] py-10 rounded-[42px]  my-5 bg-[#53534b] '>
+          <img src={clipart} alt="okay" className='w-[200px] h-[200px] rounded-e-lg mx-10' />
           <h3 className='font-bold text-[white] text-[30px] mt-[20px] text-center'>Save money</h3>
           <h3 className='mt-5 text-white text-center font-sans'>
             We help you save money to reach your goals, stay prepared for the unexpected, and build a secure future.
@@ -63,12 +63,12 @@ const SignUp = () => {
       </div>
 
       {/* Right section with sign-up form */}
-      <div className='w-50%'>
-        <div className='h-[580px] w-[320px] py-10 mx-2 rounded-[40px] my-5 bg-[white] border-2 border-[#220f0f] text-[#220f0f]'>
-          <h3 className='font-bold pt-[20px] text-center'>Create Account</h3>
+      <div className='w-50% my-2'>
+        <div className='lg:h-fit md:fit h-contain w-[320px] py-10 mx-2 rounded-[40px] my-5 bg-[white] text-[#220f0f]'>
+          <h3 className='font-bold  text-center'>Create Account</h3>
 
           {/* Input fields for user details */}
-          <h3 className='pt-10 font-bold mx-5'>Firstname</h3>
+          <h3 className='pt-5 font-bold mx-5'>Firstname</h3>
           <input
             className='w-[300px] bg-transparent mx-2 border-black border-[1px] mt-3 rounded-2xl h-[40px] pl-2'
             type="text" value={formData.firstName} name="firstName" placeholder='Enter your firstname'
@@ -107,7 +107,7 @@ const SignUp = () => {
       </div>
      
     </div>
-    <h3 className='justify-self-center font-bold  mt-5'>Already have an account  <Link to="/login"><span className=' text-[20px] text-[white]'>Sign in here</span></Link></h3>
+    <h3 className='justify-self-end font-bold  mx-5'>Already have an account  <Link to="/login"><span className=' text-[20px] text-[white]'>Sign in here</span></Link></h3>
     </div>
   );
 };
