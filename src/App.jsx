@@ -20,9 +20,9 @@ function App() {
         <Router>
           <div>
             <Routes>
-              <Route path='/' element={<SignUp />} />
+              <Route path='/signup' element={<SignUp />} />
               <Route path='/login' element={<Login />} />
-              <Route path='/homepage' element={<HomePage />} />
+              <Route path='/' element={<HomePage />} />
               <Route path='/addmoney' element={<Addmoney />} />
               <Route path='/withdrawmoney' element={<Withdrawmoney />} />
               <Route path='/transactionhistory' element={<TransactionHistory />} />
@@ -36,3 +36,4 @@ function App() {
 }
 
 export default App;
+  

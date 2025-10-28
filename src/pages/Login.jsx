@@ -27,10 +27,10 @@ const Login = () => {
         e.preventDefault();
 
         dispatch(signInUser(formData))
-            .unwrap() // Wait for the action to complete
+            .unwrap() // Wait for the action to_ complete
             .then((response) => {
                 console.log("Logged in successfully");              
-                navigate("/homepage"); // Navigate to the homepage 
+                navigate("/"); // Navigate to the homepage 
             })
             .catch((error) => {
                 console.error('Login failed :', error); 

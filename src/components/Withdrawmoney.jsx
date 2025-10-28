@@ -21,7 +21,7 @@ const Withdrawmoney = () => {
     } else {
       alert('Withdrawal successful');
       dispatch(withdrawBalance(amount));
-      navigate('/Homepage');
+      navigate('/');
     }
     setAmount(0);
   };

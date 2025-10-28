@@ -24,7 +24,7 @@ const Addmoney = () => {
   const handleSaveBalance = () => {
     dispatch(addBalance(amount));
     setAmount(0);
-    navigate('/homepage');
+    navigate('/');
   };
 
   return (

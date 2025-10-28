@@ -48,7 +48,7 @@ const SignUp = () => {
   return (
     <div className='bg-[blue] w-100% lg:h-fit md:h-fit h-contain  overflow-y-auto'>
 
-<div className='grid grid-cols-2  justify-self-center'>
+<div className='flex flex-wrap gap-5 justify-self-center'>
       {/* Left section with promotional content */}
       <div className='w-50% lg:block md:block hidden '>
         <div className='lg:h-fit md:h-fit h-contain px-5 w-[320px] py-10 rounded-[42px]  my-5 bg-[#53534b] '>
@@ -68,28 +68,28 @@ const SignUp = () => {
           <h3 className='font-bold  text-center'>Create Account</h3>
 
           {/* Input fields for user details */}
-          <h3 className='pt-5 font-bold mx-5'>Firstname</h3>
+          <h3 className='pt-2 font-bold mx-5'>Firstname</h3>
           <input
             className='w-[300px] bg-transparent mx-2 border-black border-[1px] mt-3 rounded-2xl h-[40px] pl-2'
             type="text" value={formData.firstName} name="firstName" placeholder='Enter your firstname'
             onChange={handleChange}
           />
 
-          <h3 className='pt-3 font-bold mx-5'>Lastname</h3>
+          <h3 className='pt-2 font-bold mx-5'>Lastname</h3>
           <input
             className='w-[300px] bg-transparent mx-2 border-black border-[1px] mt-3 rounded-2xl h-[40px] pl-2'
             type="text" value={formData.lastName} name="lastName" placeholder='Enter your lastname'
             onChange={handleChange}
           />
 
-          <h3 className='pt-3 font-bold mx-5'>Email</h3>
+          <h3 className='pt-2 font-bold mx-5'>Email</h3>
           <input
             className='w-[300px] bg-transparent mx-2 border-black border-[1px] mt-3 rounded-2xl h-[40px] pl-2'
             type="email" value={formData.email} name="email" placeholder='Enter your email'
             onChange={handleChange}
           />
 
-          <h3 className='pt-3 font-bold mx-5'>Password</h3>
+          <h3 className='pt-2 font-bold mx-5'>Password</h3>
           <input
             className='w-[300px] bg-transparent mx-2 border-black border-[1px] mt-3 rounded-2xl h-[40px] pl-5'
             type="password" value={formData.password} name="password" placeholder='Enter your password'
@@ -103,11 +103,11 @@ const SignUp = () => {
           >
             Sign up
           </button>
+           <h3 className='pt-1 font-bold  mx-5'>Already have an account  <Link to="/login"><span className=' text-sm text-[blue] underline'>Sign in here</span></Link></h3>
         </div>
       </div>
      
     </div>
-    <h3 className='justify-self-end font-bold  mx-5'>Already have an account  <Link to="/login"><span className=' text-[20px] text-[white]'>Sign in here</span></Link></h3>
     </div>
   );
 };
